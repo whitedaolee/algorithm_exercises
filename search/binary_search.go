@@ -2,6 +2,7 @@ package search
 
 // BinarySearch 实现了一个二分查找算法。
 // 返回一个查找的target在input的位置，不存在返回-1.
+// 需要注意的是，二分查找要求输入是有序的。
 func BinarySearch(input []int, target int) int {
 
 	left := 0
