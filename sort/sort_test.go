@@ -44,3 +44,17 @@ func TestSelectionSort(t *testing.T) {
 	t.Log(get)
 	assert.Equal(t, true, slices.Equal(get, want_zero))
 }
+
+func TestInsertionSort(t *testing.T) {
+	get := sort.InsertionSort(input)
+	t.Log(get)
+	assert.Equal(t, true, slices.Equal(get, want))
+
+	get = sort.InsertionSort(input_one)
+	t.Log(get)
+	assert.Equal(t, true, slices.Equal(get, want_one))
+
+	get = sort.InsertionSort(input_zero)
+	t.Log(get)
+	assert.Equal(t, true, slices.Equal(get, want_zero))
+}
